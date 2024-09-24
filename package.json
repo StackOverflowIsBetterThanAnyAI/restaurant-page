@@ -6,8 +6,8 @@
     "license": "MIT",
     "prettier": "prettier-es5",
     "scripts": {
-        "build": "webpack",
-        "start": "webpack serve",
+        "build": "webpack --config webpack.prod.js",
+        "start": "webpack serve --config webpack.dev.js",
         "deploy": "git subtree push --prefix dist origin gh-pages"
     },
     "devDependencies": {

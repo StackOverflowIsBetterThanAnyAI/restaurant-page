@@ -1,23 +1,17 @@
-import mainImageLeft from './../assets/images/main_left.jpg'
-import mainImageCenter from './../assets/images/main_center.jpg'
-import mainImageRight from './../assets/images/main_right.jpg'
-
+import mainImage from './../assets/images/main.jpg'
 export const generateMain = () => {
     const mainContent = [
         {
-            image: mainImageLeft,
             title: 'Biergarten',
             content:
                 'Genießen Sie gesellige Stunden in unserem Biergarten. Unsere Auswahl an erfrischenden Bieren und herzhaften Speisen lässt keine Wünsche offen.',
         },
         {
-            image: mainImageCenter,
             title: 'Gutbürgerliche Küche',
             content:
                 'Wir kochen frisch und bieten Ihnen ein wechselndes Angebot an warmen und kalten Schmankerln.',
         },
         {
-            image: mainImageRight,
             title: 'Wirtshaus und Saal',
             content:
                 'In unserem urigen Wirtshaus können Sie in gemütlicher Atmosphäre in kleiner oder großer Runde feiern.',
@@ -37,7 +31,7 @@ export const generateMain = () => {
         const container = document.createElement('div')
         container.classList.add('mainCard')
         const image = document.createElement('img')
-        image.src = mainContent[i].image
+        image.src = mainImage
         image.alt = ''
         const title = document.createElement('span')
         title.textContent = mainContent[i].title

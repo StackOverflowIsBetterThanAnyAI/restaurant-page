@@ -1,6 +1,4 @@
-import headerImageleft from './../assets/images/header_left.jpg'
-import headerImageCenter from './../assets/images/header_center.jpg'
-import headerImageRight from './../assets/images/header_right.jpg'
+import headerImage from './../assets/images/header.jpg'
 
 export const generateHeader = () => {
     const body = document.getElementById('body')
@@ -17,17 +15,17 @@ export const generateHeader = () => {
     imageContainer.id = 'imageContainer'
 
     const headerLeft = document.createElement('img')
-    headerLeft.src = headerImageleft
+    headerLeft.src = headerImage
     headerLeft.setAttribute('loading', 'lazy')
     headerLeft.setAttribute('alt', 'Gaststube des Gasthauses')
 
     const headerCenter = document.createElement('img')
-    headerCenter.src = headerImageCenter
+    headerCenter.src = headerImage
     headerCenter.setAttribute('loading', 'lazy')
     headerCenter.setAttribute('alt', 'Festlich gedeckte Tische')
 
     const headerRight = document.createElement('img')
-    headerRight.src = headerImageRight
+    headerRight.src = headerImage
     headerRight.setAttribute('loading', 'lazy')
     headerRight.setAttribute('alt', 'Zünftige musikalische Umrahmung')
 

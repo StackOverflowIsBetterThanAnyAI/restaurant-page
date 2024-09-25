@@ -712,10 +712,6 @@ nav button:active {
     outline: #854d0e solid 2px;
 }
 
-#imprintContainer div {
-    padding-bottom: 4px;
-}
-
 #imprintContainer img {
     align-self: flex-start;
     border-radius: 16px;
